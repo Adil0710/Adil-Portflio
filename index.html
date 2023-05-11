@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/14f67ef9ae.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <pre><span>A</span>dil <span>P</span>atel. </pre>
+                <ul id="sidemenu"> 
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#skills" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>  
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'am <span>Adil</span><br>This is My Portfolio</h1>
+            </div>
+            <a href="" class="btn">Download Resume</a>
+        </div>       
+    </div>
+<!-----------------------------------about------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/adil.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hello there, I'am c# and web devloper. Currently looking for intern position in software devlopment.<br>I'am currently pursuing my masters in computer applications. I have done my bachelors in computer application in year 2022.During my educational journey, I have acquired many key skills and technical knowledge in computer science and programming such as data structures, algorithms, databses, web applications and desktop applications. I have excellent academic records across my courses and am well equipped to work in challenging environment. Apart from this, I love playing football and video games</p>
+                           <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('profile')">Profile</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><p><span>M.C.A.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Pursuing)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2022</span><br>Bharati Vidyapeeth (Deemed to Be Unversity)</p></li>
+                                <li><p><span>B.C.A.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CGPA - 8.82&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019 - 2022</span><br>Bharati Vidyapeeth (Deemed to Be Unversity)</p></li>
+                                <li><p><span>XII&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60.00%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017 - 2019</span><br>Maharashtra State Board (Pune Divisional)</p></li>
+                                <li><p><span>X&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;71.00%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2016</span><br>Maharashtra State Board (Pune Divisional)</p></li>
+                            </ul>
+                        </div>  
+                        <div class="tab-contents" id="profile">
+                            <ul>
+                                <li><span>August 2, 2000</span><br>Date of Birth</li>
+                                <li><span>Pune, Maharashtra</span><br>Address</li>
+                                <li><span><a href="tel:9503304568" class="ml" style="text-decoration: none;">9503304568</a></span><br>Phone</li>
+                                <li><span><a href="mailto:padil22446@gmail.com" class="el" style="text-decoration: none;">Padil2246@gmail.com</a></span><br>Email</li>
+                            </ul>
+                        </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------skills------------------------------------------------------------------>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Languages</h2>
+                    <p>Python, C#, Java, C</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h2>Web and Database</h2>
+                    <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Tools and Frameworks</h2>
+                    <p>.NET, Visual Studio</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------Projects------------------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/in.png">
+                    <div class="layer">
+                        <h3>Inward Outward System</h3>
+                        <p>This is desktop-based application that to track letters and manage the essential activity (Entries of Sent Letters and Received Letters, Generating Parametrized Reports through SAP Crystal Report).</p>
+                        <a href="https://github.com/Adil0710/Inward-Outward-System.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            <div class="project">
+                <img src="images/phome.png">
+                <div class="layer">
+                    <h3>Paint Shop Management</h3>
+                    <p>The main objective of the project is to manage the details of customer registration, product registration, receipt, so it reduces the room for errors as the details were entered manually on paper previously</p>
+                    <a href="https://github.com/Adil0710/Paint-Shop-Management.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------Contact----------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:padil22446@gmail.com" class="ecl" style="text-decoration: none;"> Padil2246@gmail.com</a></p>
+                    <p><i class="fa-solid fa-square-phone"></i><a href="tel:9503304568" class="mcl" style="text-decoration: none;"> 9503304568</a></p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/adil-patel-737692252" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/the_lonewolf_92_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/adil.patel.393" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/Adil0710" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/919503304568" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                   <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                   </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <pre>C o p y r i g h t    ©    2 0 2 3    M a d e    W i t h    <i class="fa-solid fa-heart"></i>    B y    A d i l    P a t e l. </pre>
+        </div> 
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-280px";
+        }
+    </script>
+</body>
+</html>̥
