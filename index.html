@@ -41,7 +41,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1><br>
-                    <p>Hello there, I'am c# and web devloper. Currently looking for intern position in software devlopment.<br>I'am currently pursuing my masters in computer applications. I have done my bachelors in computer application in year 2022.During my educational journey, I have acquired many key skills and technical knowledge in computer science and programming such as data structures, algorithms, databases, web applications and desktop applications. I have excellent academic records across my courses and am well equipped to work in challenging environment. Apart from this, I love playing football and video games</p>
+                    <p>Hello there, I'am Python, C# and Web Devloper. Currently looking for intern position in software devlopment. I am eager to apply my skills and knowledge in a professional setting and contribute to a dynamic and innovative team.<br>I'am currently pursuing my masters in computer applications. I have done my bachelors in computer application in year 2022.During my educational journey, I have acquired many key skills and technical knowledge in computer science and programming such as data structures, algorithms, databases, web applications and desktop applications. I have excellent academic records across my courses and am well equipped to work in challenging environment. Apart from this, I love playing football and video games</p>
                            <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                             <p class="tab-links" onclick="opentab('profile')">Profile</p>
@@ -195,6 +195,10 @@
                 </div>
             </div>
         </div>
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+        
         <div class="copyright">
             <pre>C o p y r i g h t    ©    2 0 2 3    M a d e    W i t h    <i class="fa-solid fa-heart"></i>    B y    A d i l    P a t e l. </pre>
         </div> 
@@ -245,6 +249,17 @@
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script>
+    const toTop = document.querySelector(".to-top");
+
+    window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 100 ) {
+            toTop.classList.add("active");
+        } else {
+            toTop.classList.remove("active");
+        }
     })
   </script>
 </body>
