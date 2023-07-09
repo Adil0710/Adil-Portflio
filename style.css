@@ -91,14 +91,14 @@ nav ul li a:hover::after {
 .about-col-1 img {
     width: 115%;
     border-radius: 15px;
-    
+    height: 97%;
 }
 .about-col-2 {
     flex-basis: 68%;
     font-size: 15px;
 }
 .sub-title {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
 }
