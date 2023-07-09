@@ -89,20 +89,22 @@ nav ul li a:hover::after {
     flex-basis: 25%;
 }
 .about-col-1 img {
-    width: 115%;
+    width: 120%;
     border-radius: 15px;
+    height: 97%;
 }
 .about-col-2 {
     flex-basis: 68%;
+    font-size: 15px;
 }
 .sub-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #fff;
 }
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 20px;
 }
 .tab-links {
      margin-right: 50px;
