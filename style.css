@@ -4,13 +4,21 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    
+}
+.dark-theme {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+}
 html {
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     background-image: url(images/anime.png);
     background-repeat: no-repeat;
     background-size: auto;
@@ -32,15 +40,19 @@ nav span {
 .logo {
     width: 140px;
 }
+nav ul {
+    flex: 1;
+    text-align: right;
+}
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 18px;
     filter: drop-shadow(5px 12px 10px #535353 );
     transition: 0.7s;
 }
 nav ul li a {
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -70,7 +82,6 @@ nav ul li a:hover::after {
     font-size: 60px;
     margin-top: 20px;
     filter: drop-shadow(5px 12px 10px #535353 );
-    cursor: pointer;
     transition: 0.5s;
 }
 .header-text h1:hover {
@@ -99,10 +110,16 @@ nav ul li a:hover::after {
     filter: drop-shadow(0px 0px 0px );
     transition: 0.7s;
 }
+#icon {
+    width: 27px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 /*---------------------------about------------------------*/
 #about {
     padding: 140px 0;
     color: #ababab;
+    background-color: var(--primary-color);
 }
 .row {
     display: flex;
@@ -127,6 +144,7 @@ nav ul li a:hover::after {
 .about-col-2 {
     flex-basis: 68%;
     font-size: 15px;
+    color: var(--secondary-color);
 }
 .sub-title {
     font-size: 50px;
@@ -145,6 +163,7 @@ nav ul li a:hover::after {
      position: relative;
      filter: drop-shadow(5px 12px 10px #535353 );
      transition: 0.7s;
+     color: var(--secondary-color);
 }
 .tab-links:hover{
     filter: drop-shadow(0px 0px 0px );
@@ -166,6 +185,7 @@ nav ul li a:hover::after {
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
+    color: var(--secondary-color);
 }
 .tab-contents ul li span {
     color: #b54769;
@@ -186,7 +206,7 @@ nav ul li a:hover::after {
 /*-------------------------------------------Skills----------------------*/
 #skills {
     padding: 10px 0;
-   
+    background-color:var(--primary-color);
 }
 .sub-title {
     margin-top: 0px;
@@ -206,6 +226,7 @@ nav ul li a:hover::after {
     transition: background 0.5s, transform 0.7s;
     filter: drop-shadow(5px 12px 10px #535353 );
     transition: 0.7s;
+    color: #fff;
 }
 .skills-list div i {
     font-size: 50px;
@@ -231,10 +252,12 @@ nav ul li a:hover::after {
 }
 /*----------------------------------------------Projects------------------------------*/
 #portfolio {
-    padding: 15px 0;
-    margin-top: 180px;
+    padding-top: 200px;
+    background-color: var(--primary-color);
 }
-
+.sub-title {
+    color: var(--secondary-color);
+}
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -273,6 +296,7 @@ nav ul li a:hover::after {
     text-align: center;
     font-size: 12px;
     transition: height 0.5s;
+    color: #fff;
 }
 .layer h3 {
     font-weight: 500;
@@ -305,10 +329,12 @@ nav ul li a:hover::after {
 #leadership{
     padding: 15px 0;
     margin-top: 300px;
+    background-color:var(--primary-color);
 }
 
 .title {
     font-size: 50px;
+    color: var(--secondary-color);
 }
 .lc-list {
     display: grid;
@@ -325,6 +351,7 @@ nav ul li a:hover::after {
     transition: background 0.5s, transform 0.7s;
     filter: drop-shadow(5px 12px 10px #535353 );
     transition: 0.7s;
+    color: #fff;
 }
 .lc-list div i {
     font-size: 50px;
@@ -381,18 +408,21 @@ nav ul li a:hover::after {
 #contact {
     padding: 10px 0;
     padding-top: 200px;
+    background-color: var(--primary-color);
 }
 .ecl {
-    color: #fff;
+    color: var(--secondary-color);
 }
 .mcl {
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .contact-left {
     flex-basis: 35%;
 }
-
+.sub-title {
+    color: var(--secondary-color);
+}
 .contact-right {
     flex-basis: 60%;
 }
@@ -416,10 +446,10 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #464646;
     display: inline-block;
     transition: transform 0.5s;
-    filter: drop-shadow(0px 10px 8px #636262 );
+    filter: drop-shadow(5px 18px 16px #535353 );
     transition: 0.7s;
 }
 
@@ -481,6 +511,7 @@ form input,form textarea:hover{
     background: #262626;
     font-weight: 300;
     margin-top: 100px;
+    color: #ababab;
 }
 .copyright i {
     color: #ff004f;
@@ -538,6 +569,7 @@ nav .fa-solid{
     nav .fa-solid {
         display: block;
         font-size: 25px;
+        margin-right: 0px;
     }
     nav ul {
         background: #ff004f;

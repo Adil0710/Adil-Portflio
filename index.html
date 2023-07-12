@@ -26,6 +26,7 @@
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <img src="images/moon.png" id="icon">
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>  
                 
             </nav>
@@ -255,6 +256,8 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
+
+
   <script>
     const toTop = document.querySelector(".to-top");
 
@@ -265,6 +268,19 @@
             toTop.classList.remove("active");
         }
     })
+  </script>
+    
+  <script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+        }else{
+            icon.src = "images/moon.png";
+        }
+    }
   </script>
 </body>
 </html>̥
