@@ -37,6 +37,7 @@ nav ul li {
     list-style: none;
     margin: 10px 20px;
     filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
 }
 nav ul li a {
     color: #fff;
@@ -68,7 +69,13 @@ nav ul li a:hover::after {
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
-    filter: drop-shadow(3px 3px 5px #636262 );
+    filter: drop-shadow(5px 12px 10px #535353 );
+    cursor: pointer;
+    transition: 0.5s;
+}
+.header-text h1:hover {
+    filter: drop-shadow(0px 0px 0px );
+    transition: 0.7s;
 }
 .header-text h1 span {
     color: #ff004f;
@@ -84,6 +91,7 @@ nav ul li a:hover::after {
     color: #fff;
     filter: drop-shadow(3px 4px 6px #636262 );
     transition: background 0.5s, transform 0.7s;
+    transition: 0.7s;
 }
 .btn:hover{
     background:  #ff0c59;
@@ -108,6 +116,13 @@ nav ul li a:hover::after {
     width: 115%;
     border-radius: 15px;
     height: 97%;
+    filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
+    cursor: pointer;
+}
+.about-col-1 img:hover {
+    filter: drop-shadow(0px 0px 0px );
+    transition: 0.7s;
 }
 .about-col-2 {
     flex-basis: 68%;
@@ -128,6 +143,12 @@ nav ul li a:hover::after {
      font-weight: 500;
      cursor: pointer;
      position: relative;
+     filter: drop-shadow(5px 12px 10px #535353 );
+     transition: 0.7s;
+}
+.tab-links:hover{
+    filter: drop-shadow(0px 0px 0px );
+    transition: 0.7s;
 }
 .tab-links::after {
     content: '';
@@ -183,8 +204,8 @@ nav ul li a:hover::after {
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.7s;
-    filter: drop-shadow(0px 10px 8px #535353 );
-    
+    filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
 }
 .skills-list div i {
     font-size: 50px;
@@ -225,7 +246,8 @@ nav ul li a:hover::after {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    filter: drop-shadow(0px 10px 8px #535353 );
+    filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
 }
 .project img {
     width: 100%;
@@ -301,7 +323,8 @@ nav ul li a:hover::after {
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.7s;
-    filter: drop-shadow(0px 10px 8px #535353 );
+    filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
 }
 .lc-list div i {
     font-size: 50px;
@@ -386,7 +409,7 @@ nav ul li a:hover::after {
 
 .social-icons {
     margin-top: 70px;
-    filter: drop-shadow(0px 10px 8px #636262 );
+    
 }
 
 .social-icons a {
@@ -396,18 +419,28 @@ nav ul li a:hover::after {
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
+    filter: drop-shadow(0px 10px 8px #636262 );
+    transition: 0.7s;
 }
 
 .social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
-    filter: drop-shadow();
+    filter: drop-shadow(0px 0px 0px );
+    transition: 0.7s;
 }
 
 .contact-right form {
     width: 100%;
 }
-
+.contact-right input{
+    filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
+}
+.contact-right input:hover {
+    filter: drop-shadow(0px 0px 0px );
+    transition: 0.7s;
+}
 form input,form textarea {
     width: 100%;
     border: 0;
@@ -418,9 +451,13 @@ form input,form textarea {
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
-    filter: drop-shadow(3px 3px 5px #535353 );
+    filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
 }
-
+form input,form textarea:hover{
+    filter: drop-shadow(0px 0px 0px );
+    transition: 0.7s;
+}
 .btn.btn2 {
     display: inline-block;
     color: #ff004f;
