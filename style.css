@@ -47,7 +47,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 18px;
+    margin: 10px 15px;
     filter: drop-shadow(5px 12px 10px #535353 );
     transition: 0.7s;
 }
@@ -111,10 +111,10 @@ nav ul li a:hover::after {
     transition: 0.7s;
 }
 #icon {
-    width: 27px;
+    width: 25px;
     cursor: pointer;
-    margin-top: 20px;
 }
+
 /*---------------------------about------------------------*/
 #about {
     padding: 140px 0;
@@ -429,8 +429,18 @@ nav ul li a:hover::after {
 
 .contact-left p {
     margin-top: 50px;
+    
 }
-
+.contact-left p a {
+    filter: drop-shadow(5px 12px 10px #535353 );
+    transition: 0.7s;
+}
+.contact-left p a:hover{
+    transform: translateX(-7px) translateY(-7px);
+    filter: drop-shadow(0px 0px 0px );
+    transition: 0.7s;
+    font-weight: 1000px;
+}
 .contact-left p i {
     color: #ff004f;
     margin-right: 15px;
@@ -439,7 +449,6 @@ nav ul li a:hover::after {
 
 .social-icons {
     margin-top: 70px;
-    
 }
 
 .social-icons a {
@@ -575,16 +584,17 @@ nav .fa-solid{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -280px;
-        width: 280px;
+        right: -260px;
+        width: 260px;
         height: 100vh;
         padding-top: 30px;
         z-index: 2;
         transition: right 0.5s;
+        text-align: left;
     }
     nav ul li {
         display: block;
-        margin: 25px;
+        margin: 25px ;
     }
     nav ul .fa-solid{
         position: absolute;
@@ -627,12 +637,19 @@ nav .fa-solid{
     .copyright {
         font-size: 10.5px;
     }
+    .to-top:hover{
+        right: 10px;
+        height: 25px;
+        width: 25px;
+        font-size: 15px;
+    }
     .to-top {
         right: 10px;
         height: 25px;
         width: 25px;
         font-size: 15px;
     }
+    
 }
 #msg {
     color: #61b752;
