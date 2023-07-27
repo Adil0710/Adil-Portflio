@@ -610,12 +610,12 @@ nav .fa-solid{
     }
     nav ul li {
         display: block;
-        margin: 25px;
+        margin: 20px;
     }
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
-        left: 25px;
+        left: 20px;
         cursor: pointer;
     }
     .sub-title{
