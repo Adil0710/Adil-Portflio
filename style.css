@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -127,12 +129,13 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 .about-col-1 {
-    flex-basis: 25%;
+    flex-basis: 27%;
 }
 .about-col-1 img {
-    width: 115%;
+    margin-top: 70px;
+    width: 119%;
     border-radius: 15px;
-    height: 97%;
+    height: 86%;
     filter: drop-shadow(5px 12px 10px #535353 );
     transition: 0.7s;
     cursor: pointer;
@@ -142,8 +145,8 @@ nav ul li a:hover::after {
     transition: 0.7s;
 }
 .about-col-2 {
-    flex-basis: 68%;
-    font-size: 15px;
+    flex-basis: 63%;
+    font-size: 14.2px;
     color: var(--secondary-color);
 }
 .sub-title {
@@ -252,11 +255,12 @@ nav ul li a:hover::after {
 }
 /*----------------------------------------------Projects------------------------------*/
 #portfolio {
-    padding-top: 200px;
+    padding-top: 100px;
     background-color: var(--primary-color);
 }
 .sub-title {
     color: var(--secondary-color);
+    margin-top: 60px;
 }
 .project-list {
     display: grid;
@@ -324,21 +328,36 @@ nav ul li a:hover::after {
     filter: drop-shadow(0px 0px 0px );
     transition: 0.7s;
 }
-
+.seem{
+    display: block;
+    margin: 60px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius:  6px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in;
+}
+.seem:hover{
+    background-color: #ff004f;
+    color: #ffffff;
+}
 /*------------------------------------------leadership and certificate---------------------------*/
 #leadership{
     padding: 15px 0;
-    margin-top: 300px;
+    margin-top: 100px;
     background-color:var(--primary-color);
 }
 
 .title {
     font-size: 50px;
     color: var(--secondary-color);
+    margin-top: 10px;
 }
 .lc-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 50px;
     margin-top: 110px;
 }
@@ -515,11 +534,12 @@ form input,form textarea:hover{
 }
 .copyright {
     width: 100%;
+    height: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 10px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 100px;
+    margin-top: 150px;
     color: #ababab;
 }
 .copyright i {
@@ -532,22 +552,20 @@ form input,form textarea:hover{
     color: #ff004f;
     bottom: 150px;
     right: 80px;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     opacity: 0;
     pointer-events: none;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 .to-top:hover{
-    width: 45px;
-    height: 45px;
-    font-size: 30px;
+    transform: scale(1.3);
     align-items: center;
     justify-content: center;
 }
@@ -561,7 +579,7 @@ form input,form textarea:hover{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     body {
         background-image: url(images/anime.png);
         background-repeat: no-repeat;
@@ -625,7 +643,9 @@ nav .fa-solid{
         height: 40px;
         width: 40px;
         line-height: 40px;
-
+    }
+    .seem{
+        padding: 10px 30px;
     }
     
     .contact-left, .contact-right {
@@ -651,6 +671,51 @@ nav .fa-solid{
     }
     
 }
+/*-----------------------------css for small screen (min-width: 600px, max-width: 1378px)------------------*/
+@media only screen and (min-width: 650px) and (max-width: 1378px) {
+    nav {
+        font-size: 49px;
+    }
+    nav ul li {
+        margin: 0px 15px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    .about-col-1 {
+        flex-basis: 28%;
+    }
+    .about-col-1 img {
+        width: 118%;
+        height: 86%;
+    }
+    .about-col-2 {
+        flex-basis: 64%;
+        font-size: 13px;
+    }
+    .about-col-2 h1 {
+        font-size: 40px;
+    }
+    .layer {
+        font-size: 11px;
+        font-weight: 300;
+    }
+   
+    .layer a {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .lc-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .lc-list div {
+        font-size: 12.8px;
+    }
+    .seem {
+        padding: 10px 35px;
+    }
+}
+
 #msg {
     color: #61b752;
     margin-top: 20px;

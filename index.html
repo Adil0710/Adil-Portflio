@@ -11,6 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div id="header">
@@ -79,17 +80,17 @@
         <div class="container">
             <h1 class="sub-title">My Skills</h1>
             <div class="skills-list">
-                <div>
+                <div class="skill-i">
                     <i class="fa-solid fa-code"></i>
                     <h2>Languages</h2>
                     <p>Python, C#, Java, C</p>
                 </div>
-                <div>
+                <div class="skill-ii">
                     <i class="fa-solid fa-earth-americas"></i>
                     <h2>Web and Database</h2>
                     <p>HTML, CSS, JavaScript, PHP, MySQL, MongoDB</p>
                 </div>
-                <div>
+                <div class="skill-iii">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
                     <h2>Tools and Frameworks</h2>
                     <p>.NET, Visual Studio</p>
@@ -104,6 +105,7 @@
             <div class="project-list">
                 
                 <div class="project">
+                    <div class="prj-i">
                     <img src="images/AI.png">
                     <div class="layer">
                         <h3>Virtual Voice Assistance</h3>
@@ -111,7 +113,9 @@
                         <a href="https://github.com/Adil0710/Voice-Assistance" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
+                </div>
                 <div class="project">
+                    <div class="prj-ii">
                     <img src="images/in.png">
                     <div class="layer">
                         <h3>Inward Outward System</h3>
@@ -119,7 +123,9 @@
                         <a href="https://github.com/Adil0710/Inward-Outward-System.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
+                </div>
             <div class="project">
+                <div class="prj-iii">
                 <img src="images/phome.png">
                 <div class="layer">
                     <h3>Paint Shop Management</h3>
@@ -127,8 +133,11 @@
                     <a href="https://github.com/Adil0710/Paint-Shop-Management.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
+            </div>
         </div>
+        <a href="projects.html" class="seem">See more</a>
     </div>
+    
     <!-----------------------------------------Leadership and Certifications-------------------------------------------------------------->
 
     <div id="leadership">
@@ -179,9 +188,11 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
+                    <div class="cn-em">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:padil22446@gmail.com" class="ecl" style="text-decoration: none;"> Padil2246@gmail.com</a></p>
                     <p><i class="fa-solid fa-square-phone"></i><a href="tel:9503304568" class="mcl" style="text-decoration: none;"> 9503304568</a></p>
+                </div>
                     
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/adil-patel-737692252" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -284,6 +295,33 @@
             icon.src = "images/moon.png";
         }
     }
+  </script>
+
+  <script>
+     ScrollReveal({ 
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+    });
+
+    ScrollReveal().reveal('.nbar', { delay: 500, origin: 'top' });
+    ScrollReveal().reveal('.header-text', { delay: 500 });
+    ScrollReveal().reveal('.sub-title', { delay: 100 });
+    ScrollReveal().reveal('.title', { delay: 100 });
+    ScrollReveal().reveal('.about-col-1', { delay: 200 , origin: 'left' });
+    ScrollReveal().reveal('.about-col-2', { delay: 400 , origin: 'right' });
+    ScrollReveal().reveal('.skill-i', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.skill-ii', { delay: 200, origin: 'left' });
+    ScrollReveal().reveal('.skill-iii', { delay: 100, origin: 'left' });
+    ScrollReveal().reveal('.prj-i', { delay: 300, origin: 'left' });
+    ScrollReveal().reveal('.prj-ii', { delay: 200, origin: 'left' });
+    ScrollReveal().reveal('.prj-iii', { delay: 100, origin: 'left' });
+    ScrollReveal().reveal('.seem', { delay: 200 });
+    ScrollReveal().reveal('.lc-list', { delay: 200 , origin: 'left' });
+    ScrollReveal().reveal('.cn-em', { delay: 200 , origin: 'left' });
+    ScrollReveal().reveal('.social-icons', { delay: 300 , origin: 'bottom' });
+    ScrollReveal().reveal('.contact-right', { delay: 200 , origin: 'right' });
   </script>
 </body>
 </html>̥
