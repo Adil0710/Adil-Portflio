@@ -579,7 +579,7 @@ form input,form textarea:hover{
 nav .fa-solid{
     display: none;
 }
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 600px){
     body {
         background-image: url(images/anime.png);
         background-repeat: no-repeat;
@@ -672,7 +672,7 @@ nav .fa-solid{
     
 }
 /*-----------------------------css for small screen (min-width: 600px, max-width: 1378px)------------------*/
-@media only screen and (min-width: 650px) and (max-width: 1378px) {
+@media only screen and (min-width: 600px) and (max-width: 1378px) {
     nav {
         font-size: 49px;
     }
