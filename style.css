@@ -635,13 +635,13 @@ nav .fa-solid{
     }
     .layer {
         padding: 0 0 ;
-        font-size: 12px;
+        font-size: 10px;
     }
     .layer a {
         margin-top: 10px;
-        font-size: 20px;
-        height: 40px;
-        width: 40px;
+        font-size: 15px;
+        height: 38px;
+        width: 38px;
         line-height: 40px;
     }
     .seem{
