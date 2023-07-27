@@ -610,12 +610,12 @@ nav .fa-solid{
     }
     nav ul li {
         display: block;
-        margin: 25px ;
+        margin: 11px;
     }
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
-        left: 25px;
+        left: 11px;
         cursor: pointer;
     }
     .sub-title{
@@ -656,7 +656,7 @@ nav .fa-solid{
         font-size: 10.5px;
     }
     .to-top {
-        left: 357px;
+        left: 362px;
         height: 20px;
         width: 20px;
         font-size: 12px;
