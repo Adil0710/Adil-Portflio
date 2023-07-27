@@ -657,14 +657,8 @@ nav .fa-solid{
     .copyright {
         font-size: 10.5px;
     }
-    .to-top:hover{
-        right: 5px;
-        height: 25px;
-        width: 25px;
-        font-size: 15px;
-    }
     .to-top {
-        right: 5px;
+        right: 0px;
         height: 25px;
         width: 25px;
         font-size: 15px;
