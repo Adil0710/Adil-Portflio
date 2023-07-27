@@ -547,7 +547,7 @@ form input,form textarea:hover{
 }
 
 .to-top {
-    background: rgba(100,100,100,0.4);
+    background: #ababab;
     position: fixed;
     color: #ff004f;
     bottom: 150px;
@@ -610,19 +610,19 @@ nav .fa-solid{
     }
     nav ul li {
         display: block;
-        margin: 11px;
+        margin: 20px;
     }
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
-        left: 11px;
+        left: 20px;
         cursor: pointer;
     }
     .sub-title{
         font-size: 40px;
     }
     .about-col-1, .about-col-2 {
-        flex-basis: 90%;
+        flex-basis: 95%;
     }
     .about-col-1 {
         margin-bottom: 35px;
