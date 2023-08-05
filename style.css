@@ -533,6 +533,7 @@ form input,form textarea:hover{
     margin-top: 07px;
 }
 .copyright {
+    margin-bottom: -32px;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -541,6 +542,7 @@ form input,form textarea:hover{
     font-weight: 300;
     margin-top: 150px;
     color: #ababab;
+    font-size: 1.2vw;
 }
 .copyright i {
     color: #ff004f;
@@ -652,8 +654,9 @@ nav .fa-solid{
     .contact-right {
         margin-top: 100px;
     }
-    .copyright {
-        font-size: 10.5px;
+    .copyright{
+        width: 120%;
+        font-size: 1.5vw;
     }
     .to-top {
         left: 370px;
