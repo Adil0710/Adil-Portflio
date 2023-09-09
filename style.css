@@ -249,9 +249,12 @@ nav ul li a:hover::after {
 }
 .skills-list div:hover {
     background: #ff004f;
-    transform:translateY(-10px);
     filter: drop-shadow(0px 0px 0px );
+    transform: translateY(-10px);
     transition: 0.7s;
+}
+.skill-ii:hover{
+    transform: translateY(-10px);
 }
 .skill-ii p{
     letter-spacing: 0.3px;
@@ -635,7 +638,7 @@ nav .fa-solid{
         margin-right: 0px;
     }
     nav ul {
-        background: #ff0051a1;
+        background: #ff0051ea;
         position: fixed;
         top: 0;
         right: -300px;
@@ -668,6 +671,10 @@ nav .fa-solid{
     }
     .about-col-2 {
         font-size: 13.8px;
+    }
+    .skills-list div{
+        font-size: 12px;
+        padding: 31px;
     }
     .layer {
         padding: 0 0 ;
@@ -728,6 +735,11 @@ nav .fa-solid{
     }
     .about-col-2 h1 {
         font-size: 40px;
+    }
+
+    .skills-list div{
+        font-size: 12px;
+        padding: 31px;
     }
     .layer {
         font-size: 11px;
