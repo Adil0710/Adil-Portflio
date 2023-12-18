@@ -252,7 +252,7 @@ function AnimationSmallerScreen(){
             scrollTrigger:{
                 trigger:"#header h2",
                 scroller:"#main",
-                start:"top 50%",
+                start:"top 70%",
                 end:"top 0%",
                 scrub:1
             }
@@ -290,7 +290,7 @@ function AnimationSmallerScreen(){
                 trigger:"#header h2",
                 scroller:"#main",
                 start:"top -30%",
-                end: "top -30%",
+                end: "top -50%",
                 scrub:3
             }
         })
@@ -299,7 +299,7 @@ function AnimationSmallerScreen(){
             scrollTrigger:{
                 trigger:"#header h1",
                 scroller:"#main",
-                start:"top -40%",
+                start:"top -50%",
                 end: "top -30%",
                 scrub:3
             }
@@ -405,7 +405,7 @@ function AnimationSmallerScreen(){
             scale: 1,
             opacity: "1",
             duration: 0.5,
-            stagger: 1,
+            stagger: 0.5,
             scrollTrigger: {
               trigger: "#projects .sub-title",
               scroller: "#main",

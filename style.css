@@ -847,8 +847,13 @@ form input,form textarea {
         margin-right: 10px;
         color: #fff;
     }
-    nav a{
-        display: none;
+    nav .resume{
+        font-size: 12px;
+        padding: 8px 15px;
+        border: 1px solid #86868698;
+    }
+    nav img{
+        height: 60px;
     }
     nav ul {
         display: flex;
