@@ -401,7 +401,7 @@ function AnimationSmallerScreen(){
             }
         })
         
-        gsap.to("#projects .projects-list .projects .prj", {
+        /*gsap.to("#projects .projects-list .projects .prj", {
             scale: 1,
             opacity: "1",
             duration: 0.5,
@@ -413,7 +413,7 @@ function AnimationSmallerScreen(){
               end: "top -80%",
               scrub:3,
             }
-          });
+          });*/
           gsap.to(".projects-line",{
             width:"100%",
             scrollTrigger:{
@@ -435,7 +435,7 @@ function AnimationSmallerScreen(){
                 scrub:3,
             }
         });
-        gsap.to("#certification .certification-list .certification .list", {
+        /*gsap.to("#certification .certification-list .certification .list", {
             scale: 1,
             opacity: "1",
             duration: 0.5,
@@ -447,7 +447,7 @@ function AnimationSmallerScreen(){
               end: "top -10%",
               scrub:3,
             }
-          });
+          });*/
           gsap.to(".certification-line",{
             width:"100%",
             scrollTrigger:{
