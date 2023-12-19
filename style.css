@@ -410,7 +410,7 @@ nav ul .fa-solid{
 
 /*---------------------------projects------------------------*/
 #projects{
-    min-height: 160vh;
+    min-height: 190vh;
     width: 100%;
     position: relative;
     z-index: 10;
